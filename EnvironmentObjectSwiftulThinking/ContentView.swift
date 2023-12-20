@@ -8,17 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var viewModel: EnvironmentViewModel = EnvironmentViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        NavigationView {
+            List{
+                ForEach(viewModel.dataArray, id: \.self) { item in
+                    NavigationLink(
+                        destination: DetailView(selectedItem: item),
+                        label: {
+                            Text(item)
+                        })
+                }
+                
+            }.navigationTitle("iOS Devices")
         }
-        .padding()
+        .environmentObject(viewModel)
+        
+        
     }
 }
 
-#Preview {
-    ContentView()
-}
+
+
