@@ -41,9 +41,6 @@
 		32A0E30F2B2100F70024F34B = {
 			isa = PBXGroup;
 			children = (
-				32C805052B337AF100223316 /* FinalView.swift */,
-				32C805032B33789E00223316 /* DetailView.swift */,
-				32A0E3292B2103FC0024F34B /* EnvironmentViewModel.swift */,
 				32A0E31A2B2100F70024F34B /* EnvironmentObjectSwiftulThinking */,
 				32A0E3192B2100F70024F34B /* Products */,
 			);
@@ -61,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				32A0E31B2B2100F70024F34B /* EnvironmentObjectSwiftulThinkingApp.swift */,
+				32A0E3292B2103FC0024F34B /* EnvironmentViewModel.swift */,
 				32A0E31D2B2100F70024F34B /* ContentView.swift */,
+				32C805032B33789E00223316 /* DetailView.swift */,
+				32C805052B337AF100223316 /* FinalView.swift */,
 				32A0E31F2B2100F80024F34B /* Assets.xcassets */,
 				32A0E3212B2100F80024F34B /* Preview Content */,
 			);
